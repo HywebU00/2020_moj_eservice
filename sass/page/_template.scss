@@ -51,11 +51,39 @@ body {
 ////////////////////////////////////////////////////////////
 // 為了與首頁區隔，請在內頁加上innerpage ClassName
 .innerpage {
-    padding-top: 2em;
     @include screen('mobile') {
         padding-top: 5em;
     }
     >.container {
         @include gutter(); //gutter 代表左右要留白
+    }
+    .function{
+        float: right;
+        padding: .5em 0;
+    }
+    .main_img{
+        background: $mainImgBg;
+        .container{
+            height:160px;
+            background: url(../images/main_img.jpg) center top -50px no-repeat;
+            background-size:cover;
+        }
+    }
+}
+h2{
+    &.title{
+        font-size: 1.5em;
+        letter-spacing: 1px;
+        padding: .4em 0;
+        position:relative;
+        &:after{
+            content:"";
+            position: absolute;
+            left:1px;
+            bottom:0;
+            width:.9em;
+            height:1px;
+            background: $primaryColor;
+        }
     }
 }

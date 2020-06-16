@@ -53,7 +53,7 @@
 }
 
 .main_banner{
-    background: #dfe2e6;
+    background: $mainImgBg;
     position:relative;
     &:before{
         content:"";
@@ -69,26 +69,30 @@
         }
     }
     .container{
-        background: url(../images/main_img.jpg) center no-repeat;
-        background-size:cover;
+        background: url(../images/main_img.jpg) right top no-repeat;
+        background-size:contain;
         min-height: 410px;
         overflow:hidden;
         position:relative;
         //padding:1.5em;
         box-sizing:border-box;
+        @include screen('mobile'){
+            background-position:center top;
+            background-size:cover;
+        }
         &:before{
             content:"";
             position:absolute;
-            left:-180px;
+            left:-110px;
             top:0;
             width: 500px;
-            height:100%;
+            height:101%;
             background: $primaryColor;
             transform: skew(-25deg);
             z-index:0;
+            transform-origin: top right;
             @include screen('mobile'){
                 left:-200px;
-                transform-origin: top right;
                 transform: skew(-35deg);
             }
             @include screen('xs_mobile'){
@@ -100,7 +104,7 @@
             z-index:10;
         }
         .text-1{
-            left:70px;
+            left:50px;
             top:100px;
             @include screen('mobile'){
                 left:15px;
@@ -109,24 +113,23 @@
                 width:50%;
             }
             @include screen('xs_mobile'){
-
+                top:30px;
             }
         }
         .text-2{
-            left:310px;
+            left:290px;
             top:160px;
             @include screen('mobile'){
                 left:150px;
                 top:150px;
                 max-width:300px;
-                width:50%;
+                width:60%;
             }
             @include screen('xs_mobile'){
                 left:100px;
             }
         }
         .point_li{
-            font-size: .813em;
             color:#707070;
             padding: 0 1em 0 .5em;
             display: flex;
@@ -134,12 +137,12 @@
             align-items: flex-end;
             padding-top: 250px;
             @include screen('mobile'){
-
+                padding-top:220px;
             }
             ul{
                 @include li-reset;
-                width:calc(100% - 300px);
-                flex-basis: calc(100% - 300px);
+                width:calc(100% - 280px);
+                flex-basis: calc(100% - 280px);
                 margin: 1em 0;
                 @include screen('mobile'){
                     width:calc(100% - 130px);
@@ -151,7 +154,9 @@
                 }
             }
             li{
-                padding:.2em 0 .2em 1.2em;
+                font-size: .938em;
+                padding:.25em 0 .25em 1.2em;
+                line-height:1.8;
                 position:relative;
                 &:before{
                     content:"";
@@ -168,27 +173,25 @@
     }
 }
 .point{
-    position:relative;
-    font-size:.813em;
-    width: 80%;
+    display:flex;
+    justify-content: center;
     margin:0 auto;
-    padding: 1em 0 1em 2em;
-    @include screen('mobile'){
-        width:90%;
-    }
-    &:before{
-        content:"";
-        position:absolute;
-        left:0;
-        top:16px;
-        width: 14px;
-        height:14px;
-        background: url(../images/point_type.png) center no-repeat;
-        background-size:contain;
-    }
+    padding: 1em 0;
     a{
+        position:relative;
         color:$color-word;
-
+        font-size:.938em;
+        padding-left: 2em;
+        &:before{
+            content:"";
+            position:absolute;
+            left:0;
+            top:3px;
+            width: 14px;
+            height:14px;
+            background: url(../images/point_type.png) center no-repeat;
+            background-size:contain;
+        }
     }
 }
 .mp_search{
