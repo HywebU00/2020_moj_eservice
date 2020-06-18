@@ -23,7 +23,7 @@
     <!-- 直接跳主內容區 -->
     <a class="goCenter" href="#center" tabindex="1">按Enter到主內容區</a>
     <!-- wrapper Start -->
-    <div class="wrapper mp">
+    <div class="wrapper">
         <!-- header Start -->
         <header class="header">
             <div class="container">
@@ -52,18 +52,11 @@
                 <div class="search">
                     <div class="form_grp">
                         <label for="mustSameAsId">搜尋</label>
-                        <input name="username" id="mustSameAsId" type="text" placeholder="請輸入文字" accesskey="S">
+                        <input name="username" id="mustSameAsId" type="text" accesskey="S">
                         <input name="" type="submit" title="查詢" value="查詢" />
                     </div>
                     <div class="btn_grp">
-                        <input name="" type="submit" value="進階搜尋" />
-                    </div>
-                    <div class="keywordHot">
-                        <ul>
-                            <li><a href="#">熱門熱門</a></li>
-                            <li><a href="#">查詢</a></li>
-                            <li><a href="#">字詞三</a></li>
-                        </ul>
+                        <input name="" type="submit" value="進階" />
                     </div>
                 </div>
                 <!-- Search End -->
@@ -85,141 +78,59 @@
         </header>
         <!-- header End -->
         <!-- main Start -->
-        <div id="center" class="main">
+        <div id="center" class="main innerpage">
+            <!-- 內頁新增一個classname-->
             <a class="accesskey" href="#aC" id="aC" accesskey="C" title="主要內容區">:::</a>
-            <section class="col-12 main_banner">
+            <div class="main_img">
                 <div class="container">
-                    <img src="images/main_img_text.png" class="img_title text-1" alt="">
-                    <img src="images/eservice.png" class="img_title text-2" alt="">
-                    <div class="point_li">
-                        <ul>
-                            <li>『法務部便民服務線上申辦，提供檢察機關、矯正機關、行政執行機關與民眾有關的各項申辦業務的申請表及線上申辦服務，建議您可先看過「程序填表說明」及「線上申辦步驟說明」後，再進行表單下載及填寫，或者線上申辦（註：並非所有項目均提供線上申辦）。』</li>
-                            <li>本網站申辦項目提供民眾使用自然人憑證或工商憑證等電子憑證進行身分驗證</li>
-                            <li>本系統為免費使用。表單以 Adobe(R) Acrobat Reader或Word格式製作，若無法閱讀請按下載相關軟體。</li>
-                        </ul>
-                    </div>
                 </div>
-            </section>
-            <section>
-                <div class="container">
-                    <div class="point">
-                        <a href="#">務部單一申辦窗口，提供檢察機關、矯正機關、行政執行機關及調查機關等與民眾有關的各項申辦業務的申請表及線上申辦服務</a>
-                    </div>
+            </div>
+            <div class="container">
+                <!-- breadcrumb路徑 -->
+                <div class="breadcrumb">
+                    <span>現在位置 </span>
+                    <ul>
+                        <li><a href="#">首頁</a></li>
+                        <li>申辦案件進度查詢</li>
+                    </ul>
                 </div>
-            </section>
-            <section class="mp_search">
-                <div class="container">
-                    <form action="" class="form_inline">
+                <!-- h2節點 -->
+                <h2 class="title">申辦案件進度查詢</h2>
+                <!-- LP Start -->
+                <section class="qp">
+                    <p>註:<abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>為必填(選)欄位, 不能為空白。</p>
+                    <form action="" class="form_grid">
                         <div class="form_grp">
-                            <label for="mustSameAsId" class="saerch_title">Search</label>
-                            <input name="username" id="mustSameAsId" type="text" placeholder="關鍵字查找申辦項目" accesskey="S">
-                            <input name="" type="submit" title="查詢" value="查詢" />
+                            <label for="" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>案件受理編號：</label>
+                            <div class="form_content form_inline">
+                                <input name="name" type="text">
+                            </div>
+                        </div>
+                        <div class="form_grp">
+                            <label for="" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>申辦人身份證字號：</label>
+                            <div class="form_content form_inline">
+                                <input name="name" type="text">
+                            </div>
+                        </div>
+                        <div class="form_grp">
+                            <label class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>驗證碼：</label>
+                            <div class="form_content form_inline">
+                                <input type="text" id="" value="">
+                                <img src="images/basic/captcha.gif" alt="" class="captcha">
+                                <div class="btn_grp">
+                                    <button class="btn btn-captcha">語音播放</button>
+                                    <button class="btn btn-captcha">更換驗證碼</button>
+                                </div>
+                            </div>
                         </div>
                         <div class="btn_grp">
-                            <input name="" type="submit" title="查詢" value="進階" />
+                            <button class="btn btn-submit">送出資料</button>
+                            <button class="btn btn-reset">重新填寫</button>
                         </div>
                     </form>
-                </div>
-            </section>
-            <section class="hot_srevice">
-                <div class="container">
-                    <h2>熱門申辦項目</h2>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <img src="images/hot_service_1.png" alt="">
-                                <h3>參訪矯正機關</h3>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="images/hot_service_2.png" alt="">
-                                <h3>申請出監證明</h3>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="images/hot_service_3.png" alt="">
-                                <h3>申請到分署閱覽卷宗</h3>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="images/hot_service_4.png" alt="">
-                                <h3>申請到分署閱覽卷宗閱覽卷宗</h3>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <section class="org">
-                <div class="container">
-                    <h2>依申辦<br />機關瀏覽</h2>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <img src="images/org_01.png" alt="">
-                                <h3>法務部</h3>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="images/org_02.png" alt="">
-                                <h3>矯正機關</h3>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="images/org_03.png" alt="">
-                                <h3>行政執行機關</h3>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="images/org_04.png" alt="">
-                                <h3>廉政機關</h3>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <section class="ad_banner">
-                <div class="container">
-                    <div class="adSlider">
-                        <div class="img-container">
-                            <a href="#" title="">
-                                <img data-lazy="images/ad_01.jpg" class="contain">
-                            </a>
-                        </div>
-                        <div class="img-container">
-                            <a href="#" title="">
-                                <img data-lazy="images/ad_02.jpg" class="contain">
-                            </a>
-                        </div>
-                        <div class="img-container">
-                            <a href="#" title="">
-                                <img data-lazy="images/ad_03.jpg" class="contain">
-                            </a>
-                        </div>
-                        <div class="img-container">
-                            <a href="#" title="">
-                                <img data-lazy="images/ad_04.jpg" class="contain">
-                            </a>
-                        </div>
-                        <div class="img-container">
-                            <a href="#" title="">
-                                <img data-lazy="images/ad_01.jpg" class="contain">
-                            </a>
-                        </div>
-                        <div class="img-container">
-                            <a href="#" title="">
-                                <img data-lazy="images/ad_02.jpg" class="contain">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            </section>
+                </section>
+                <!-- LP End -->
+            </div>
         </div>
         <!-- 地址 電話-->
         <section class="contact_info">
@@ -239,7 +150,6 @@
         <section class="fatfooter">
             <div class="container">
                 <!-- <button type="button" name="收合" class="btn btn-fatfooter">收合</button> -->
-
                 <nav>
                     <ul>
                         <li>

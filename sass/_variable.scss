@@ -6,8 +6,9 @@
 $primaryColor: #903f8d; //主色
 $secondaryColor: #4c4ca6; //輔色
 $lightColor: #fcc211; //點綴
-$linkColor: #21baff; //連結
-$importantColor: #ff3e4d; //重要
+$linkColor1: #f3614a; //連結
+$linkColor2: #12b6af;
+//$importantColor: #ff3e4d; //重要
 // 但注意真實顏色與語意的關聯必須易於辨識
 $color-blue: #21baff;
 $color-green: #5cb85c;
@@ -16,7 +17,7 @@ $color-red: #ff3e4d;
 $color-yellow: #fcc211;
 $color-purple: #aa5ac5;
 $color-gray: #ccc;
-$color-dark: #333333;
+$color-dark: #222;
 $color-hr: #666; //hr顏色
 $color-word: #333; //一般字的顏色
 $color-bg: #f0f0f0;
@@ -24,7 +25,7 @@ $color-bg: #f0f0f0;
 $thirdColor: #bb4aa6;
 $fourthColor: #784aa4;
 // 連結顏色
-$aColor: $secondaryColor;
+$aColor: #525288;
 $aHover: lighten($aColor, 10);
 
 // 表單focus顏色

@@ -51,9 +51,9 @@ body {
 ////////////////////////////////////////////////////////////
 // 為了與首頁區隔，請在內頁加上innerpage ClassName
 .innerpage {
-    @include screen('mobile') {
-        padding-top: 5em;
-    }
+    // @include screen('mobile') {
+    //     padding-top: 5em;
+    // }
     >.container {
         @include gutter(); //gutter 代表左右要留白
     }
@@ -67,6 +67,10 @@ body {
             height:160px;
             background: url(../images/main_img.jpg) center top -50px no-repeat;
             background-size:cover;
+            @include screen('xs_mobile'){
+                height:100px;
+                background-position: top 0 center;
+            }
         }
     }
 }

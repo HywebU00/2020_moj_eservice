@@ -23,9 +23,19 @@ select::-ms-expand {
     margin: .5em;
     border-top: 1px solid #DDD;
     .form_grp {
-        border-bottom: 1px dashed #DDD;
+        border-left: 1px solid #DDD;
+        border-right: 1px solid #DDD;
+        border-bottom: 1px dotted #DDD;
         overflow: hidden;
-        padding: .2em 0;
+        padding: .4em 0;
+        display:flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 0;
+        background: #fefefe;
+        &:nth-last-child(2){
+            border-bottom: 1px solid #DDD;
+        }
         // 閱讀條文
         &.agree {
             border-bottom: none;
@@ -39,10 +49,12 @@ select::-ms-expand {
     .form_title {
         float: left;
         width: $form_title_width;
+        text-align: right;
         @include gutter();
         padding-top: 5px;
-        @include screen('mobile') {
+        @include screen('xs_mobile') {
             width: 100%;
+            text-align: left;
         }
     }
     .form_content {
@@ -53,6 +65,23 @@ select::-ms-expand {
         overflow: hidden;
         @include screen('mobile') {
             width: 100%;
+        }
+        &.form_inline{
+            input[type="text"],
+            input[type="email"],
+            input[type="tel"],
+            input[type="date"],
+            select,
+            .btn_grp{
+                width: auto;
+                min-width: 100px;
+                display: inline-block;
+                margin-right: 5px;
+                @include screen('xs_mobile') {
+                    width: 100%;
+                    display: block;
+                }
+            }
         }
         // 第二層的設定
         .form_grp {
@@ -350,7 +379,7 @@ input[type="submit"] {
 }
 textarea {
     @include formStyle();
-    height: 5em;
+    height: 6em;
     overflow-y: scroll;
     @include screen('xs_mobile') {
         width: 100%;

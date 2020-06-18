@@ -12,18 +12,17 @@ $btn-radius:.2em;
 // 按鈕的共用設定
 @mixin btn_setting($btn-bg:#f5f5f5, $btn-font-color:$btn-font-color) {
     background-color: $btn-bg;
-    border: 1px solid darken($btn-bg, 15);
+    border: 1px solid $btn-bg;
     color: $btn-font-color;
-    text-shadow:1px 1px 1px RGBA(0,0,0,.3);
+    //text-shadow:1px 1px 1px RGBA(0,0,0,.3);
     @include border-radius($btn-radius);
-    @include gradient(lighten($btn-bg, 5), darken($btn-bg, 15), vertical);
+    //@include gradient(lighten($btn-bg, 5), darken($btn-bg, 15), vertical);
     &:hover, &:focus {
         background-color: darken($btn-bg, 10); // Old browsers
-        border: 1px solid darken($btn-bg, 20) !important;
+        //border: 1px solid darken($btn-bg, 20) !important;
         cursor: pointer;
-        color: #FFF;
+        //color: #FFF;
         outline:none;
-        @include gradient(lighten($btn-bg, 10), darken($btn-bg, 18), vertical);
     }
     &.active {
         background: lighten($btn-bg, 5);
@@ -45,7 +44,7 @@ $btn-radius:.2em;
     padding: $btn-padding;
     min-width: 4em;
     margin: .25em .1em;
-    
+
     i {
         margin-right: .3em;
         margin-left: .3em;
@@ -88,14 +87,29 @@ $btn-radius:.2em;
 .btn-purple {
     @extend %btn;
     @include btn_setting(lighten($color-purple, 5), #FFF);
+
 }
 .btn-submit {
-    @extend %btn;
-    @include btn_setting(lighten($primaryColor, 5), #FFF);
+    @include btn_setting($color-dark, #FFF);
+    padding: 1em 3em;
+    min-width: 7.5em;
+    &:hover{
+        color:#fff;
+    }
+    @include screen('xs_mobile'){
+        padding: 1em 2em;
+    }
 }
 .btn-reset {
-    @extend %btn;
-    color:lighten($color-word,15);
+    @include btn_setting(#f1f1f1, $color-word);
+    padding: 1em 3em;
+    min-width: 7.5em;
+    @include screen('xs_mobile'){
+        padding: 1em 2em;
+    }
+}
+.btn-captcha{
+    @include btn_setting($aColor, #fff);
 }
 .btn-primary {
     @extend .btn-orange;

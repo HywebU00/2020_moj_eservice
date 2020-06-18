@@ -2,32 +2,50 @@
     @extend %clearfix;
     text-align: left;
     margin: 1em auto;
+
     ul {
         @include li-reset;
+        overflow: hidden;
+        border-bottom: 1px solid $primaryColor;
         li {
-            margin: 0px 3px 3px 0px;
             display: block;
             float: left;
+            &:first-of-type{
+                a:before{
+                    content:none;
+                }
+            }
         }
     }
     a {
-        @include gradient(#FFF, #DDD, vertical);
-        border: 1px solid #CCC;
-        padding: .4em 1em;
+        //@include gradient(#FFF, #DDD, vertical);
+        //border: 1px solid #CCC;
+        padding:.5em 1em;
         display: block;
         color: #333;
+        font-weight:bold;
         @include box-sizing();
-        border-radius:4px;
+        //border-radius:4px;
+        position: relative;
+        border-bottom: 3px solid  #fff;
+        transition: all .2s;
+        &:before{
+            content:"";
+            position:absolute;
+            left:0;
+            top:.75em;
+            width: 1px;
+            height:14px;
+            background: $color-gray;
+        }
         &:hover,
         &:focus {
-            color: #FFF;
-            @include gradient(darken($primaryColor, 0), darken($primaryColor, 15), vertical);
-            border: 1px solid darken($primaryColor, 15);
-            box-shadow: none;
+            border-bottom: 3px solid  lighten($primaryColor, 10);
+            color:lighten($primaryColor, 10);
         }
         &.active {
-            color: #FFF;
-            @include gradient(darken($primaryColor, 0), darken($primaryColor, 15), vertical);
+            border-bottom: 3px solid  $primaryColor;
+            color:$primaryColor;
         }
         span {
             font-size: .813em;
