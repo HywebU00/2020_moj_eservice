@@ -110,6 +110,9 @@ $btn-radius:.2em;
 }
 .btn-captcha{
     @include btn_setting($aColor, #fff);
+    &:hover{
+        color:#fff;
+    }
 }
 .btn-primary {
     @extend .btn-orange;

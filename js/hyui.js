@@ -651,6 +651,7 @@ $(function() {
         if ($(this).parents('.table_list').length == 0 && $(this).parents('.fix_th_table').length == 0 && $(this).parent('form').length == 0) {
             $(this).scroltable();
         }
+
     });
     // tablearrow arrow，為了設定箭頭
     $('.scroltable-nav-left').append('<div class="tablearrow_left" style="display:none;"></div>');
@@ -703,6 +704,8 @@ $(function() {
                 });
             }
         });
+        $('.no_data_title').find('table').find('tr').find('td').removeAttr('data-title')
+
     }
     rwdTable();
     /*-----------------------------------*/

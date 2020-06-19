@@ -76,6 +76,14 @@ table {
             }
         }
     }
+    &.no_data_title{
+        td{
+            padding-left:.5em !important;
+            &:before{
+                content:none;
+            }
+        }
+    }
 }
 // fix_th_table
 .fix_th_table {
