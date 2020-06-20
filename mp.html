@@ -13,6 +13,7 @@
     <!-- slick css-->
     <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css" />
+    <link rel="stylesheet" href="vendor/animate.css">
     <!-- hyUI css -->
     <link rel="stylesheet" href="css/hyui.css">
     <!-- favicon -->
@@ -89,8 +90,8 @@
             <a class="accesskey" href="#aC" id="aC" accesskey="C" title="主要內容區">:::</a>
             <section class="col-12 main_banner">
                 <div class="container">
-                    <img src="images/main_img_text.png" class="img_title text-1" alt="">
-                    <img src="images/eservice.png" class="img_title text-2" alt="">
+                    <img src="images/main_img_text.png" class="img_title text-1 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s alt="">
+                    <img src="images/eservice.png" class="img_title text-2 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s alt="">
                     <div class="point_li">
                         <ul>
                             <li>『法務部便民服務線上申辦，提供檢察機關、矯正機關、行政執行機關與民眾有關的各項申辦業務的申請表及線上申辦服務，建議您可先看過「程序填表說明」及「線上申辦步驟說明」後，再進行表單下載及填寫，或者線上申辦（註：並非所有項目均提供線上申辦）。』</li>
@@ -122,9 +123,9 @@
                 </div>
             </section>
             <section class="hot_srevice">
-                <div class="container">
+                <div class="container ">
                     <h2>熱門申辦項目</h2>
-                    <ul>
+                    <ul class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
                         <li>
                             <a href="#">
                                 <img src="images/hot_service_1.png" alt="">
@@ -224,12 +225,12 @@
         <!-- 地址 電話-->
         <section class="contact_info">
             <div class="container">
-                <div class="location">
+                <div class="location wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
                     <p>地址：10048 台北市重慶南路一段130號</p>
                     <a href="#">交通資訊</a>
                     <a href="#">辦公時間</a>
                 </div>
-                <div class="tel">
+                <div class="tel wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
                     <span>電話總機：<em>(02)2191-0189</em></span>
                     <span>傳真電話：<em>(02)2389-6274</em></span>
                 </div>
@@ -302,10 +303,15 @@
     <script src="vendor/lazyload/lazyload.js"></script><!-- lazyload -->
     <script src="vendor/picturefill/picturefill.min.js" async></script><!-- picturefill -->
     <script src="vendor/scrolltable/jquery.scroltable.min.js"></script><!-- scrolltable -->
+    <!-- WOW -->
+    <script src="vendor/wow/wow.min.js"></script>
     <!-- hyUI -->
     <script src="js/hyui.js"></script>
     <!-- 客製js -->
     <script src="js/customize.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>

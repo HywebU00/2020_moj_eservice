@@ -243,6 +243,10 @@
                 -moz-box-sizing: border-box;
                 -webkit-box-sizing: border-box;
                 box-sizing: border-box;
+                &:focus{
+                    outline: none;
+                    box-shadow: 0 0px 0px 2px $aHover inset;
+                }
             }
         }
         .saerch_title{
@@ -266,7 +270,7 @@
                 background: lighten($primaryColor, 10);
                 border-radius: 30px;
                 border:none;
-                &:hover{
+                &:hover, &:focus{
                     background: darken($primaryColor, 10);
                 }
             }
@@ -330,6 +334,10 @@
                 height:100%;
                 padding:2em 1em 1em;
                 box-sizing:border-box;
+                transition: all .3s;
+                &:hover{
+                    transform: translateY(-5px);
+                }
             }
 
             &:nth-of-type(5n+1){
@@ -413,6 +421,11 @@
                 border:1px solid $color-gray;
                 @include screen('xs_mobile'){
                     justify-content: left;
+                }
+                &:hover{
+                    h3{
+                        color:$aColor;
+                    }
                 }
                 img{
                     float:left;
@@ -522,6 +535,7 @@
             border-radius: 30px;
             border:1px solid #fff;
             color:#fff;
+            transition: all .2s;
             &:after{
                 content:"";
                 position:absolute;
@@ -533,6 +547,13 @@
                 border-color: #fff;
                 border-style: solid;
                 transform: rotate(45deg);
+                transition: all .2s;
+            }
+            &:hover, &:focus{
+                background: $aColor;
+                &:after{
+                    right:1.2em;
+                }
             }
         }
     }
