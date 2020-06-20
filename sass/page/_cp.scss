@@ -5,6 +5,7 @@ h1.title, h2.title {
     margin: .4em 0;
 }
 .cp {
+    padding: 1em 0 2em 0;
     .pic {
         float: left;
         margin: 0px 1em 1em 0;
@@ -115,7 +116,7 @@ div.tag {
     margin: 0 auto;
     @include clearfix();
     h3 {
-        font-size: 1.5em;
+        font-size: 1.25em;
         padding: 12px 0px 15px 0px;
         margin: 0.5em 0px 0.2em;
         border-bottom: 1px solid $primaryColor;

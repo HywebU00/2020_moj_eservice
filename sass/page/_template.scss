@@ -60,6 +60,14 @@ body {
     .function{
         float: right;
         padding: .5em 0;
+        ul{
+            overflow:hidden;
+        }
+        @include screen('mobile'){
+            float: none;
+            display:flex;
+            justify-content: flex-end;
+        }
     }
     .main_img{
         background: $mainImgBg;

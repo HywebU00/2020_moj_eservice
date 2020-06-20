@@ -69,7 +69,7 @@
         @include screen('mobile') {
             padding: 1em 0;
         }
-        ul {
+        >ul {
             display:flex;
             justify-content: center;
             align-items: stretch;
@@ -80,12 +80,12 @@
                 margin: 0px auto;
                 justify-content: left;
             }
-            li {
-                display: inline-flex;
+            >li {
+                display: inline-block;
                 text-align: center;
                 //vertical-align: top;
-                justify-content: center;
-                align-items: center;
+                //justify-content: center;
+                //align-items: center;
                 margin: 0 -5px 0 0;
                 padding: 1.2em 2em;
                 border-right:1px solid $color-gray;

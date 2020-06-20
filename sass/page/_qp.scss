@@ -2,4 +2,7 @@
 	margin: 1em auto;
 	@include box-sizing;
 	padding:1em;
+  @include screen('mobile'){
+    padding: 0;
+  }
 }

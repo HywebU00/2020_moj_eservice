@@ -91,161 +91,47 @@
                     <span>現在位置 </span>
                     <ul>
                         <li><a href="#">首頁</a></li>
-                        <li>監獄-申請出監證明</li>
+                        <li>節點</li>
                     </ul>
                 </div>
                 <!-- h2節點 -->
-                <h2 class="title">監獄-申請出監證明</h2>
-                <!-- LP Start -->
-                <section class="qp">
-                    <p>註:<abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>為必填(選)欄位, 不能為空白。</p>
+                <h2 class="title">轉寄文章</h2>
+                <!-- function功能區塊 -->
+                <div class="function">
+                    <ul>
+                        <li class="back icon_back"><a href="#">回上一頁</a></li>
+                        <li class="forward icon_forward"><a href="#">轉寄文章</a></li>
+                        <li class="print icon_print"><a href="#">友善列印</a></li>
+                    </ul>
+                </div>
+                <!-- FP Start -->
+                <section class="fp">
+                    <p>註:<abbr class="necessary" title=“為必填(選)欄位,不能為空白。“>*</abbr>為必填(選)欄位, 不能為空白。</p>
                     <form action="" class="form_grid">
                         <div class="form_grp">
-                            <label for="selectSample" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>受理機關：</label>
-                            <div class="form_content form_inline">
-                                <select id="selectSample" name="">
-                                    <option>請選擇</option>
-                                    <option value="">法務部矯正署台北監獄</option>
-                                    <option value="">法務部矯正署桃園監獄</option>
-                                    <option value="">法務部矯正署八德外役監獄</option>
-                                    <option value="">法務部矯正署彰化監獄</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form_grp">
-                            <label for="password" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>申辦人姓名：</label>
-                            <div class="form_content form_inline">
-                                <input name="name" type="text">
-                            </div>
-                        </div>
-                        <div class="form_grp">
-                            <label for="" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>身分證字號：</label>
-                            <div class="form_content form_inline">
-                                <input name="name" type="text">
-                                <span> PS:外國人請輸入護照或外僑居留證號碼</span>
-                            </div>
-                        </div>
-                        <div class="form_grp">
-                            <label for="address" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>地址：</label>
+                            <label for="" class="form_title"><abbr class="necessary" title=“為必填(選)欄位,不能為空白。“>*</abbr>您的電子信箱：</label>
                             <div class="form_content">
-                                <input name="name" type="text">
-                            </div>
-                        </div>
-                        <div class="form_grp">
-                            <label for="email" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>電子信箱：</label>
-                            <div class="form_content">
-                                <input name="email" type="email">
+                                <input type="text" id="" value="">
                                 <div class="notice_warning">這似乎不是一個正常的格式 <a href="javascript:;" class="close"><img src="images/basic/icon_close.svg" alt=""></a>
                                 </div>
                             </div>
                         </div>
                         <div class="form_grp">
-                            <label for="" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>性別：</label>
+                            <label for="" class="form_title"><abbr class="necessary" title=“為必填(選)欄位,不能為空白。“>*</abbr>收件者電子信箱：</label>
                             <div class="form_content">
-                                <div class="radio_grp form_inline">
-                                    <label>
-                                        <input type="radio" name="sampleRadio6" value="" checked="">男</label>
-                                    <label>
-                                        <input type="radio" name="sampleRadio6" value="">女</label>
+                                <input name="" id="" type="text">
+                                <div class="notice_info">請輸入Email，多個帳號請用 ; 隔開。 <a href="javascript:;" class="close"><img src="images/basic/icon_close.svg" alt=""></a>
                                 </div>
                             </div>
                         </div>
                         <div class="form_grp">
-                            <div class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>生日：</div>
-                            <div class="form_content form_inline birthday">
-                                <select name="" id="">
-                                    <option value="">2019</option>
-                                    <option value="">2018</option>
-                                    <option value="">2017</option>
-                                    <option value="">2016</option>
-                                    <option value="">...</option>
-                                </select>年 <select name="" id="">
-                                    <option value="">01</option>
-                                    <option value="">02</option>
-                                    <option value="">03</option>
-                                    <option value="">04</option>
-                                    <option value="">...</option>
-                                </select>月 <select name="" id="">
-                                    <option value="">01</option>
-                                    <option value="">02</option>
-                                    <option value="">03</option>
-                                    <option value="">04</option>
-                                    <option value="">...</option>
-                                </select>日 </div>
-                        </div>
-                        <div class="form_grp">
-                            <label for="phone" class="form_title">聯繫電話：</label>
-                            <div class="form_content form_inline">
-                                <input id="phone" name="phone" type="tel" value="">
-                                <div class="notice_info">電話格式：02-23456789 或 0912-345678 <a href="javascript:;" class="close"><img src="images/basic/icon_close.svg" alt=""></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form_grp">
-                            <div class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>入監日期：</div>
-                            <div class="form_content form_inline">
-                                <!-- <input name="" type="date" value=""> -->
-                                <select name="" id="">
-                                    <option value="">2019</option>
-                                    <option value="">2018</option>
-                                    <option value="">2017</option>
-                                    <option value="">2016</option>
-                                    <option value="">...</option>
-                                </select>年 <select name="" id="">
-                                    <option value="">01</option>
-                                    <option value="">02</option>
-                                    <option value="">03</option>
-                                    <option value="">04</option>
-                                    <option value="">...</option>
-                                </select>月 <select name="" id="">
-                                    <option value="">01</option>
-                                    <option value="">02</option>
-                                    <option value="">03</option>
-                                    <option value="">04</option>
-                                    <option value="">...</option>
-                                </select>日 </div>
-                        </div>
-                        <div class="form_grp">
-                            <div class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>出監日期：</div>
-                            <div class="form_content form_inline">
-                                <select name="" id="">
-                                    <option value="">2019</option>
-                                    <option value="">2018</option>
-                                    <option value="">2017</option>
-                                    <option value="">2016</option>
-                                    <option value="">...</option>
-                                </select>年 <select name="" id="">
-                                    <option value="">01</option>
-                                    <option value="">02</option>
-                                    <option value="">03</option>
-                                    <option value="">04</option>
-                                    <option value="">...</option>
-                                </select>月 <select name="" id="">
-                                    <option value="">01</option>
-                                    <option value="">02</option>
-                                    <option value="">03</option>
-                                    <option value="">04</option>
-                                    <option value="">...</option>
-                                </select>日 </div>
-                        </div>
-                        <div class="form_grp">
-                            <div class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>申請事由：</div>
+                            <label for="" class="form_title"><abbr class="necessary" title=“為必填(選)欄位,不能為空白。“>*</abbr>內容：</label>
                             <div class="form_content">
-                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                                <textarea name="" id="" cols="30" rows="70"></textarea>
                             </div>
                         </div>
                         <div class="form_grp">
-                            <div class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>申請份數：</div>
-                            <div class="form_content form_inline">
-                                <select name="" id="">
-                                    <option value="">1</option>
-                                    <option value="">2</option>
-                                    <option value="">3</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form_grp">
-                            <label class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>驗證碼：</label>
+                            <label class="form_title"><abbr class="necessary" title=“為必填(選)欄位,不能為空白。“>*</abbr>驗證碼：</label>
                             <div class="form_content form_inline">
                                 <input type="text" id="" value="">
                                 <img src="images/basic/captcha.gif" alt="" class="captcha">
@@ -263,6 +149,13 @@
                         </div>
                     </form>
                 </section>
+                <!-- FP End -->
+                <div class="function">
+                    <ul>
+                        <li class="icon_home"><a href="#">回首頁</a></li>
+                        <li class="icon_back"><a href="#">回上一頁</a></li>
+                    </ul>
+                </div>
                 <!-- LP End -->
             </div>
         </div>

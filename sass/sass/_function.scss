@@ -24,7 +24,7 @@ div.function {
             a {
                 font-size: .813em;
                 display: block;
-                padding: .2em 1em;
+                padding: .2em .65em;
                 background: $function_color;
                 border-color: $function_color;
                 color: lighten($color-word, 10);
@@ -49,6 +49,7 @@ div.function {
                     @extend %function_before;
                     background: url(../images/basic/icon_print.svg) no-repeat center center;
                     background-size: cover;
+                    filter:invert(.6);
                 }
             }
             // 轉寄友人
@@ -57,6 +58,7 @@ div.function {
                     @extend %function_before;
                     background: url(../images/basic/icon_forward.svg) no-repeat center center;
                     background-size: cover;
+                    filter:invert(.6);
                 }
             }
             &.icon_home {
