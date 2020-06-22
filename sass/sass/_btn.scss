@@ -93,8 +93,13 @@ $btn-radius:.2em;
     @include btn_setting($color-dark, #FFF);
     padding: 1em 3em;
     min-width: 7.5em;
-    &:hover{
+    &:hover, &:focus{
         color:#fff;
+    }
+    &:focus{
+        outline: none;
+        box-shadow: 0 0px 0px 2px $form-focus inset;
+        border:1px solid $form-focus;
     }
     @include screen('xs_mobile'){
         padding: 1em 2em;
@@ -110,8 +115,13 @@ $btn-radius:.2em;
 }
 .btn-captcha{
     @include btn_setting($aColor, #fff);
-    &:hover{
+    &:hover, &:focus{
         color:#fff;
+    }
+    &:focus{
+        outline: none;
+        box-shadow: 0 0px 0px 1px $form-focus inset;
+        border:1px solid $form-focus;
     }
 }
 .btn-primary {

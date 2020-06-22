@@ -252,13 +252,17 @@
             padding: .6em 1.8em .6em !important;
             font-size: .813em;
             background: lighten($primaryColor, 10);
-            border: 1px solid lighten($primaryColor, 10);
+            border:none;
             border-radius: 30px;
             min-width: auto;
         }
         input[type="submit"]{
-            &:hover{
+            &:hover,&:focus{
                 background: $primaryColor;
+            }
+            &:focus{
+                outline: none;
+                box-shadow: 0 0px 0px 2px $aHover inset;
             }
         }
     }
