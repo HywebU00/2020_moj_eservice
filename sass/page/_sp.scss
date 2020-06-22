@@ -5,78 +5,77 @@
     }
 
 }
-.two_column{
-    display:flex;
-    flex-wrap: wrap;
-    clear:both;
-    .left_col{
-        flex:0 0 200px;
-        box-sizing: border-box;
-        padding-bottom:0xw;
-        @include screen('mobile'){
-            flex:1 1 100%;
-        }
-        .nav{
-            ul{
-                @include li-reset;
-                //border-radius: 5px;
-                //border:1px solid $color-gray;
-                margin:1em 0;
-                li{
-                    margin-bottom: 2px;
-                    //border-bottom: 1px solid $color-gray;
-                    &:last-of-type{
-                        border-bottom: none;
-                    }
-                    @include screen('mobile'){
-                        display:inline-block;
-                    }
-                    a{
-                        display:block;
-                        padding: .65em 1em;
-                        color:#fff;
-                        background: $aColor;
-                        border-radius: 5px;
+// .two_column{
+//     display:flex;
+//     flex-wrap: wrap;
+//     clear:both;
+//     .left_col{
+//         flex:0 0 200px;
+//         box-sizing: border-box;
+//         padding-bottom:0xw;
+//         @include screen('mobile'){
+//             flex:1 1 100%;
+//         }
+//         .nav{
+//             ul{
+//                 @include li-reset;
+//                 //border-radius: 5px;
+//                 //border:1px solid $color-gray;
+//                 margin:1em 0;
+//                 li{
+//                     margin-bottom: 2px;
+//                     //border-bottom: 1px solid $color-gray;
+//                     &:last-of-type{
+//                         border-bottom: none;
+//                     }
+//                     @include screen('mobile'){
+//                         display:inline-block;
+//                     }
+//                     a{
+//                         display:block;
+//                         padding: .65em 1em;
+//                         color:#fff;
+//                         background: $aColor;
+//                         border-radius: 5px;
 
-                        &:hover, &:focus{
-                            background: $aHover;
-                        }
-                    }
-                }
-            }
-        }
-        .ad{
-            @include screen('mobile'){
-                display:none;
-            }
-            a{
-                display:block;
-                margin-bottom: 5px;
-                img{
-                    width: 200px;
-                    height: auto;
-                }
-            }
-        }
+//                         &:hover, &:focus{
+//                             background: $aHover;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//         .ad{
+//             @include screen('mobile'){
+//                 display:none;
+//             }
+//             a{
+//                 display:block;
+//                 margin-bottom: 5px;
+//                 img{
+//                     width: 200px;
+//                     height: auto;
+//                 }
+//             }
+//         }
+//     }
+//     .right_col{
+//         flex:0 1 calc(100% - 200px);
+//         padding-left:50px;
+//         box-sizing: border-box;
+//         @include screen('mobile'){
+//             flex:1 1 100%;
+//             padding:0 15px;
+//         }
+//     }
+// }
+.content{
+    padding:1em 0;
+    ul{
+        @include li-reset;
     }
-    .right_col{
-        flex:0 1 calc(100% - 200px);
-        padding-left:50px;
-        box-sizing: border-box;
-        @include screen('mobile'){
-            flex:1 1 100%;
-            padding:0 15px;
-        }
-        .content{
-            padding:1em 0;
-            ul{
-                @include li-reset;
-            }
-            li{
-                padding:1em 0;
-                border-bottom:1px dotted $color-gray;
-            }
-        }
+    li{
+        padding:1em 0;
+        border-bottom:1px dotted $color-gray;
     }
-
 }
