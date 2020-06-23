@@ -377,18 +377,18 @@
     }
 }
 .org{
-    padding:2em 0;
+    padding-bottom:2em;
+    text-align: center;
     .container{
-        display:flex;
-        align-items: center;
-        justify-content: space-between;
+        // display:flex;
+        // align-items: center;
+        // justify-content: space-between;
         @include screen('mobile'){
             justify-content: center;
-            flex-wrap: wrap;
+
         }
         h2{
-            flex: 1 0 auto;
-            padding: .4em .25em .4em 0;
+            margin-bottom: 2em;
             @include screen('mobile'){
                 flex: 0 0 auto;
                 text-align: center;
@@ -397,29 +397,35 @@
         }
         ul{
             @include li-reset;
-            padding-left:50px;
-            flex: 0 1 calc(100% - 90px);
+            overflow:hidden;
+            display:flex;
+            flex-wrap: wrap;
             @include screen('mobile'){
-                flex:0 0 100%;
-                padding-left:0;
+
             }
         }
         li{
-            @include make-xs-column(6);
-            @include make-sm-column(6);
-            @include make-md-column(3);
-            @include make-lg-column(3);
+            float: left;
+            margin:.5em;
+            width: calc(20% - 1em);
+            min-width:180px;
+            flex:0 0 calc(20% - 1em);
+            @include screen('mobile'){
+                width:calc(50% - 1em);
+                flex-basis:calc(50% - 1em);
+            }
             @include screen('xs_mobile'){
-                width:100%;
+                width:calc(100% - 1em);
+                flex-basis:calc(100% - 1em);
             }
             a{
                 display:flex;
                 justify-content: center;
                 align-items: center;
-                margin:.5em 1em;
                 padding:.25em .5em;
                 border:1px solid $color-gray;
-                @include screen('xs_mobile'){
+                width:100%;
+                @include screen('mobile'){
                     justify-content: left;
                 }
                 &:hover{
