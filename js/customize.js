@@ -125,5 +125,44 @@ $(function() {
         focusOnSelect: true,
         infinite: true
     });
+    // 跑馬燈
+    $('.marquee ul').slick({
+        dots: false,
+        infinite: true,
+        vertical: true,
+        verticalSwiping: true,
+        speed: 1000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: false,
+        pauseOnHover: true, //滑鼠移過後暫停自動撥放
+        autoplaySpeed: 1500,
+        speed: 1000,
+        // centerMode: true,
+        focusOnSelect: true,
+        //      responsive: [{
+        //          breakpoint: 990,
+        //          settings: {
+        //              slidesToShow: 2,
+        //              slidesToScroll: 2
+        //          }
+        //      }, {
+        //          breakpoint: 600,
+        //          settings: {
+        //              slidesToShow: 2,
+        //              slidesToScroll: 2,
+        //              vertical: false,
+        //              verticalSwiping: false
+        //          }
+        //      }, {
+        //          breakpoint: 480,
+        //          settings: {
+        //              slidesToShow: 1,
+        //              slidesToScroll: 1,
+        //              vertical: false,
+        //              verticalSwiping: false
+        //          }
+        //      }]
+    });
 
 });
