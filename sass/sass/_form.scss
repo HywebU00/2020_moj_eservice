@@ -265,6 +265,8 @@ form {
     // form 全域行內設定
     &.form_inline {
         display:flex;
+        justify-content: center;
+        text-align: center;
         label {
             display: inline-block;
             vertical-align: middle;

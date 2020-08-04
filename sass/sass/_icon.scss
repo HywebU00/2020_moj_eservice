@@ -3,9 +3,10 @@
         content: "";
         display: inline-block;
         height: 1em;
-        width: 1em; 
+        width: 1em;
         vertical-align: middle;
         speak: none;
+        margin-right: .5em;
     }
 }
 @mixin hyui_icon($icon_img) {
@@ -112,6 +113,9 @@
 }
 .i_global {
     @include hyui_icon('icon_global');
+}
+.i_tag {
+    @include hyui_icon('icon_tag');
 }
 .i_trash {
     @include hyui_icon('icon_trash');
