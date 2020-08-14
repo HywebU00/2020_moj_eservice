@@ -33,6 +33,9 @@
     .innerpage {
         margin-top: 0 !important;
     }
+    .main_img{
+        display: none;
+    }
     .main,
     .content {
         @include gutter(0);
