@@ -83,6 +83,7 @@
         &:before{
             content:"";
             position:absolute;
+            display: block;
             left:-110px;
             top:0;
             width: 500px;
@@ -292,13 +293,17 @@
         }
         form{
             &.form_inline{
-                input[type="text"]{
-                    width: 540px;
+                input[type="text"]{   
                     height:56px;
                     border-radius: 30px;
                     padding:1em 1.5em;
                     box-sizing:border-box;
                     border:none;
+                    width: 540px;
+                    flex-shrink: 1;
+                    @include screen('tablet'){
+                        width: 400px;
+                    }
                     @include screen('mobile'){
                         width:auto;
                     }
@@ -311,6 +316,8 @@
         .form_grp{
             position:relative;
             text-align: left;
+            display: flex;
+            align-items: center;
             input[type="submit"]{
                 font-size: 0em;
                 width: 30px !important;
@@ -322,8 +329,8 @@
                 min-width: 0em !important;
                 position: absolute;
                 right: 20px;
-                bottom:20px;
-                margin-top: -15px;
+                // bottom:20px;
+                // margin-top: -15px;
                 -moz-box-sizing: border-box;
                 -webkit-box-sizing: border-box;
                 box-sizing: border-box;

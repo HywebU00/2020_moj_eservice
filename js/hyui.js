@@ -538,22 +538,22 @@ $(function() {
     /*------------------------------------*/
     /////////////字型大小 font-size//////////
     /*------------------------------------*/
-    $('.font_size').find('.medium').addClass('active');
-    $('.font_size').find('.small').click(function(e) {
+    $('.font-size').find('.size-m a').addClass('active');
+    $('.font-size').find('.size-s a').click(function(e) {
         $(this).parent('li').siblings('li').find('a').removeClass('active');
-        $('.cp').removeClass('large_size').addClass('small_size');
+        $('.main').removeClass('large_size').addClass('small_size');
         $(this).addClass('active');
         e.preventDefault();
     });
-    $('.font_size').find('.medium').click(function(e) {
+    $('.font-size').find('.size-m a').click(function(e) {
         $(this).parent('li').siblings('li').find('a').removeClass('active');
-        $('.cp').removeClass('large_size small_size');
+        $('.main').removeClass('large_size small_size');
         $(this).addClass('active');
-        e.preventDefault();
+        e.preventDefault(); 
     });
-    $('.font_size').find('.large').click(function(e) {
+    $('.font-size').find('.size-l a').click(function(e) {
         $(this).parent('li').siblings('li').find('a').removeClass('active');
-        $('.cp').removeClass('small_size').addClass('large_size');
+        $('.main').removeClass('small_size').addClass('large_size');
         $(this).addClass('active');
         e.preventDefault();
     });

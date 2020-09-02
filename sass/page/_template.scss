@@ -47,6 +47,12 @@ body {
         font-size: 1.25em;
         display:inline-block;
     }
+    &.large_size{
+        font-size: 1.125em;
+    }
+    &.small_size{
+        font-size: .938em;
+    }
 }
 ////////////////////////////////////////////////////////////
 // 為了與首頁區隔，請在內頁加上innerpage ClassName
