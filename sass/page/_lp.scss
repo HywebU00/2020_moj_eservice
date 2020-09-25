@@ -138,6 +138,7 @@
                     flex: 0 0 10%;
                     width:10%;
                     min-width: 130px;
+                    background: transparent;
                     @include screen("mobile"){
                         flex-basis: 100%;
                         width:100%;
