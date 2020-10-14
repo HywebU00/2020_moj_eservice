@@ -7,13 +7,14 @@
   }
   >.instruction{
   	margin: 0 .5em 2em;
+  	background:lighten($color-bg, 2);
   }
 }
 
 .instruction{
 	margin:1em 0;
 	padding:1em;
-	background: $color-bg;
+	background: darken($color-bg, 2);
 	font-size: 1em;
 	color:lighten($color-word, 15);
 }
