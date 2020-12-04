@@ -36,6 +36,7 @@ $(function() {
     var _menu = $('.menu');
     _menu.find('li').has('ul').addClass('hasChild');
     var liHasChild = _menu.find('li.hasChild');
+    var _mh = _menu.height();
 
     /*-----------------------------------*/
     ////////////// 行動版選單切換////////////
@@ -580,7 +581,7 @@ $(function() {
         }
         // alt+C 主要內容區
         if (e.altKey && e.keyCode == 67) {
-            $('html, body').stop(true, true).animate({ scrollTop: $('.main').find('.accesskey').offset().top - 50}, 800, 'easeOutExpo');
+            $('html, body').stop(true, true).animate({ scrollTop: $('.main').find('.accesskey').offset().top - _mh}, 800, 'easeOutExpo');
             $('.main').find('.accesskey').focus();
         }
         // alt+B footer
@@ -619,7 +620,7 @@ $(function() {
     $('a.goCenter').keydown(function(e) {
         if (e.which == 13) {
             $('#aC').focus();
-            $('html, body').stop(true, true).animate({ scrollTop: $('.main').find('.accesskey').offset().top }, 800, 'easeOutExpo');
+            $('html, body').stop(true, true).animate({ scrollTop: $('.main').find('.accesskey').offset().top - _mh }, 800, 'easeOutExpo');
         }
     });
     /*-----------------------------------*/
