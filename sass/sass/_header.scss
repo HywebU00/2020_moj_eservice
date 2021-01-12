@@ -203,6 +203,7 @@
         width: 70%;
         height:2em;
         position: relative;
+        display: inline-flex !important;
         input {
             margin: -0.2em 0 0;
             padding: .4em 35px .4em .5em;
@@ -229,7 +230,7 @@
                 min-width: 0em !important;
                 position: absolute;
                 right: .2em;
-                top: 8%;
+                top: 0;
                 @include box-sizing;
                 &:hover,
                 &:focus {
