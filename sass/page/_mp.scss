@@ -334,9 +334,10 @@
                 -moz-box-sizing: border-box;
                 -webkit-box-sizing: border-box;
                 box-sizing: border-box;
+                &:hover,
                 &:focus{
                     outline: none;
-                    box-shadow: 0 0px 0px 2px $aHover inset;
+                    box-shadow: 0 0px 0px 2px $form-focus inset;
                 }
             }
         }
@@ -363,6 +364,9 @@
                 border:none;
                 &:hover, &:focus{
                     background: darken($primaryColor, 10);
+                }
+                &:focus{
+                    box-shadow: 0 0px 0px 2px $form-focus inset;
                 }
             }
         }
@@ -428,6 +432,9 @@
                 transition: all .3s;
                 &:hover{
                     transform: translateY(-5px);
+                }
+                &:focus{
+                    box-shadow: 0 0px 0px 2px $lightColor inset;
                 }
             }
 

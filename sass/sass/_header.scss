@@ -212,7 +212,7 @@
             border-width: 0 0 1px 0;
             &[type="text"] {
                 &:focus {
-                    box-shadow: 0px 0px 0px 3px $aHover;
+                    box-shadow: 0px 0px 0px 3px $form-focus;
                     outline: none;
                     border: none;
                 }
@@ -235,7 +235,7 @@
                 &:hover,
                 &:focus {
                     opacity: 1;
-                    box-shadow: 0px 0px 0px 2px $aHover;
+                    box-shadow: 0px 0px 0px 2px $form-focus;
                 }
                 &:focus {
                     outline: 1px solid $form-focus;
@@ -256,13 +256,14 @@
             border-radius: 30px;
             min-width: auto;
         }
-        input[type="submit"]{
+        input[type="submit"],
+        input[type="button"]{
             &:hover,&:focus{
                 background: $primaryColor;
             }
             &:focus{
                 outline: none;
-                box-shadow: 0 0px 0px 2px $aHover inset;
+                box-shadow: 0 0px 0px 2px $form-focus inset;
             }
         }
     }

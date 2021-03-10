@@ -165,7 +165,6 @@ $(function() {
             _menu.appendTo('.header .container');
             _search.removeClass('m_search');
             _search.show();
-            $('.mp .search').hide()
             search_mode = false;
 
             $('.language').find('ul').hide();
@@ -463,7 +462,7 @@ $(function() {
         e.preventDefault();
     });
     $('.scrollToTop').keydown(function(e) {
-        _body.find('a:first').focus();
+        _body.find('a.goCenter').focus();
         e.preventDefault();
     });
     /*--------------------------------------------------------*/
