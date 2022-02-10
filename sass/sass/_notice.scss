@@ -52,7 +52,7 @@
     }
 }
 *[class*="notice_success"] {
-    color: #4F8A10;
+    color: #44770E;
     background-color: #DFF2BF;
     &:before {
         background: url(../images/basic/icon_success.svg) no-repeat center center;
@@ -60,7 +60,7 @@
     }
 }
 *[class*="notice_warning"] {
-    color: #CE5605;
+    color: #B34B04;
     background-color: #FEEFB3;
     &:before {
         background: url(../images/basic/icon_warning.svg) no-repeat center center;
@@ -68,7 +68,7 @@
     }
 }
 *[class*="notice_error"] {
-    color: #D8000C;
+    color: #C2000B;
     background-color: #FFD2D2;
     &:before {
         background: url(../images/basic/icon_error.svg) no-repeat center center;
