@@ -129,6 +129,11 @@
 .slick-dots li button:focus:before {
   opacity: 1;
 }
+.slick-dots li button:focus:before {
+  outline: dotted 2px #0033ff;
+  background: #fcc211!important;
+}
+
 .slick-dots li button:before {
   position: absolute;
   top: 0;

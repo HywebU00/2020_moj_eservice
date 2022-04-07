@@ -120,8 +120,11 @@ $btn-radius:.2em;
     }
     &:focus{
         outline: none;
-        box-shadow: 0 0px 0px 1px $form-focus inset;
-        border:1px solid $form-focus;
+        // box-shadow: 0 0px 0px 1px $form-focus inset;
+        // border:1px solid $form-focus;
+        border: dotted 2px $aFocus!important;
+        background: $aFocusBg!important;
+        color:#000!important;
     }
 }
 .btn-primary {

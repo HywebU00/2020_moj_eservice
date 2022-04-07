@@ -18,11 +18,21 @@
         background: url(../vendor/slick/icon_arrow_left_inverse.png) no-repeat center center;
         background-size: 80%;
         left: -15px;
+        &:focus{
+            border: dotted 2px $aFocus!important;
+            background: $aFocusBg url(../vendor/slick/icon_arrow_left_inverse.png) no-repeat center 3px center!important;
+            background-size: 80%;
+        }
     }
     .slick-next {
         background: url(../vendor/slick/icon_arrow_right_inverse.png) no-repeat center center;
         background-size: 80%;
         right: -15px;
+        &:focus{
+            border: dotted 2px $aFocus!important;
+            background: $aFocusBg url(../vendor/slick/icon_arrow_right_inverse.png) no-repeat center 3px center!important;
+            background-size: 80%;
+        }
     }
     .img-container {
         width: 165px;
@@ -337,7 +347,11 @@
                 &:hover,
                 &:focus{
                     outline: none;
-                    box-shadow: 0 0px 0px 2px $form-focus inset;
+                    // box-shadow: 0 0px 0px 2px $form-focus inset;
+                    border: dotted 2px $aFocus;
+                    background: $aFocusBg url(../images/icon_search.png) no-repeat center center;
+                    background-size: 15px;
+                    color:#000!important;
                 }
             }
         }
@@ -366,7 +380,10 @@
                     background: darken($primaryColor, 10);
                 }
                 &:focus{
-                    box-shadow: 0 0px 0px 2px $form-focus inset;
+                    // box-shadow: 0 0px 0px 2px $form-focus inset;
+                    border: dotted 2px $aFocus!important;
+                    background: $aFocusBg!important;
+                    color:#000!important;
                 }
             }
         }

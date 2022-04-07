@@ -37,7 +37,10 @@
         box-shadow: none;
         &:hover,
         &:focus {
-            opacity: 1
+            opacity: 1;
+            border: dotted 2px $aFocus!important;
+            background: $aFocusBg url('../vendor/slick/icon_arrow_up_s.png') no-repeat center center;
+            background-size: 16px;
         }
         &:before {
             width: 10px !important;
@@ -59,7 +62,10 @@
         box-shadow: none;
         &:hover,
         &:focus {
-            opacity: 1
+            opacity: 1;
+            border: dotted 2px $aFocus!important;
+            background: $aFocusBg url('../vendor/slick/icon_arrow_up_s.png') no-repeat center center;
+            background-size: 16px;
         }
         &:before {
             width: 10px !important;
@@ -79,7 +85,7 @@
         white-space: nowrap;
         text-overflow: ellipsis;
         color: #000;
-      text-decoration: none;
+        text-decoration: none;
         span {
             color:$secondaryColor;
             margin-right: 15px;

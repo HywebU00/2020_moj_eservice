@@ -31,18 +31,21 @@
                 background: #fff;
                 //@include gradient (#F7F7F7, #EAEAEA, vertical);
                 border: #ccc solid 1px;
-                &:hover,
-                &:focus {
+                &:hover{
                     background: $color-dark;
                     color: #fff !important;
                     border: $color-dark solid 1px;
                 }
+
             }
             &.active {
                 a {
                     color: #fff !important;
                     background: #222;
                     border: darken($form-focus, 5) solid 1px;
+                    &:focus{
+                        color:#000!important;
+                    }
                 }
             }
             %arrow {
@@ -64,9 +67,16 @@
                 a {
                     text-indent: -9999px;
                     position: relative;
-                    &:hover, &:focus {
+                    &:hover {
                         &:before, &:after {
                             border: 2px solid #FFF;
+                            border-left: none;
+                            border-bottom: none;
+                        }
+                    }
+                    &:focus {
+                        &:before, &:after {
+                            border: 2px solid #333;
                             border-left: none;
                             border-bottom: none;
                         }
@@ -133,11 +143,14 @@
             vertical-align: middle;
             box-shadow: none;
             text-shadow: none;
-            &:hover, &:focus {
-                color: #fff !important;
-                background: $form-focus;
+            &:hover {
+                background: $form-focus!important;
                 border: darken($form-focus, 5) solid 1px;
                 box-shadow: none !important;
+            }
+            &:focus {
+                background: $aFocusBg!important;
+                color:#000!important;
             }
         }
     }

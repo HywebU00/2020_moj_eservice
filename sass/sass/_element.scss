@@ -1,7 +1,10 @@
 // tab的外框線
 a:focus {
     outline: none;
-    box-shadow: 0 0px 0px 2px $lightColor inset;
+    // box-shadow: 0 0px 0px 2px $lightColor inset;
+    border: dotted 2px $aFocus!important;
+    background: $aFocusBg!important;
+    color:#000!important;
     @include screen('mobile') {
         box-shadow: none;
     }
@@ -103,8 +106,12 @@ a.more {
     display: none;
     z-index: 99999999;
     text-indent: -999999px;
-    &:hover,&:focus{
+    &:hover{
         background: url(../images/basic/top.png) no-repeat center top rgba(0, 0, 0, 0.8);
+        box-shadow:none;
+    }
+    &:focus{
+        background:$aFocusBg url(../images/basic/top.png) no-repeat center top!important;
         box-shadow:none;
     }
 }
